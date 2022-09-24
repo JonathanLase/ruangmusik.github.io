@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis</title>
+</head>
+<body>
+    <canvas id="mycanvas" style="background-color:white;margin-left:20px;border:1px solid black;" width="1000px" height="600px"></canvas>
+    <script>
+        var mycanvas = document.getElementById('mycanvas');
+        var move = 0
+        var keys;
+        document.getElementsByTagName("body")[0].addEventListener("keydown", function(e) {
+            if (e.keyCode == 37) {
+            move = -1;
+        } else if (e.keyCode == 39) {
+            move = 1;
+        } else {
+            move = 0;
+        }
+        });
+
+        var ctx = mycanvas.getContext('2d');
+        img = new Image();
+        img.src = "img/blog/adam.png";
+        img.onload = function() {
+            setInterval(gerak, 120);
+        };
+        var c = 0;
+        var cf = 6; 
+        var cl = 1536; 
+        var ct = 256; 
+        var clf = 256; 
+        var ctf = 256;
+        var source_x=0;
+
+        function gerak() {
+            ctx.clearRect(0, 0, mycanvas.width, mycanvas.height);
+            ctx.drawImage(img, source_x, 0, 256, 256, 128, 128, 128, 128);
+            source_x += 256;
+            if (source_x == 1536) {
+                source_x = 0;
+            }
+        }
+    </script>
+</body>
+</html>

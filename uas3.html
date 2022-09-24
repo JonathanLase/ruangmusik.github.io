@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>UAS</title>
+</head>
+<body class="mt-4">
+    <canvas id="mycanvas" style="background-color:white;margin-left:20px;border:1px solid black;" width="1000px" height="600px"></canvas>
+    <script>
+        var mycanvas = document.getElementById('mycanvas');
+        var move = 0
+        var keys;
+        document.getElementsByTagName("body")[0].addEventListener("keydown", function(e) {
+            switch (e.keyCode) {
+                case 37:
+                    move = -1;
+                    break; //"ArrowLeft"
+                case 38:
+                    move = 0;
+                    break;  //"ArrowUp"
+                case 39:
+                    move = 1;
+                    break; //"ArrowRight"
+                case 40:
+                    move = 0;
+                    break; //"ArrowDown"
+            }
+        });
+
+        var ctx = mycanvas.getContext('2d');
+        img = new Image();
+        img.src = "img/blog/adam.png";
+        img.onload = function() {
+            setInterval(gerak, 120);
+        };
+        var cou = 0;
+        var cf = 6; 
+        var clg = 1536; 
+        var ctg = 256; 
+        var clf = clg / cf; 
+        var ctf = ctg; 
+
+        function gerak() {
+            cou += move;
+            if (cou * 5 + clf > mycanvas.width || cou <= 0) {
+                move = 0;
+            }
+            ctx.clearRect(0, 0, mycanvas.width, mycanvas.height);
+            ctx.drawImage(img,cou % cf * clf,0,clf,ctf,0 + cou * 5,0,clf,ctg);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+.body{
+    background-color:rgba(12, 103, 68, 0.8);
+    
+}
+       
+.footer-top{    
+    background: #111;
+    padding: 80px 0;
+}
+.segment-one h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff ;
+    letter-spacing: 3px;
+    margin:10px 0;
+}
+.segment-two h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.segment-two h2:before{
+    content: '|';
+    color: #c65039;
+    padding-right: 10px;
+}
+.segment-two ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.segment-two ul li{
+    line-height: 40px;
+}
+
+.segment-two ul li a{
+    color: #999;
+    text-decoration: none;
+}
+.segment-three h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.segment-three h2:before{
+    content: '|';
+    color: #c65039;
+    padding-right: 10px;
+}
+
+.segment-one a{
+    background: #494848;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.segment-one a i{
+    font-size: 20px;
+    color-scheme: #fff;
+    padding:10px 12px;
+}
+.segment-four h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.segment-four h2:before{
+    content: '|';
+    color: #c65039;
+    padding-right: 10px;
+}
+.segment-four form input[type=submit]{
+    background:green;
+    border: none;
+    padding:3px 15px;
+    margin-left: -5px;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.card-body justify-content-center{
+    cursor: pointer;
+	transform: scale(1.10);
+	transition: all 0.7s ease;
+}
+
+.nav-link:hover{
+    color: green;
+	transition:0.3s;
+	cursor:pointer;
+	transform:scale(1.02);
+}
+
+.card:hover{
+	transform: scale(1.10);
+	transition: all 0.5s ease;
+
+}
+
+.icon:hover{
+    color: green;
+	transition:0.3s;
+	cursor:pointer;
+	transform:scale(1.02);
+}
+
+.mt-2:hover{
+    color: green;
+	transition:0.3s;
+	cursor:pointer;
+	transform:scale(1.02);
+}
+
+.footer-buttom-text{
+    text-align: center;
+    background: rgb(20, 17, 17);
+    line-height: 75px;
+}
+
+.up{
+    width:50px;
+	height:50px;
+	position:fixed;
+	bottom:0px;
+	right:0px;
+    background-color: white;
+}
+

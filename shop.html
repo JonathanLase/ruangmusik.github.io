@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.css" rel="stylesheet" />
+    <link href="uas.css" rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body style="background-color: rgba(12, 103, 68, 0.8);">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
+        <div class="container">
+            <div class="collapse text-right navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            English
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Bahasa Indonesia</a>
+                            <a class="dropdown-item" href="#">UK</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            USD
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">IND</a>
+                            <a class="dropdown-item" href="#">UK</a>
+                            <a class="dropdown-item" href="#">EUR</a>
+                            <a class="dropdown-item" href="#">GBP</a>
+                            <a class="dropdown-item" href="#">SEK</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown active mr-4 ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle mr-2" style="color: white;"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="login.html">Login</a>
+                            <a class="dropdown-item" href="#">Sign Up</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark pt-3">
+        <div class="container">
+            <a class="navbar-brand mr-5" href="#" style="color:lightseagreen; font-size: 25px;"><b>Ruangmusik.</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mr-4">
+                        <a class="nav-link active" aria-current="page" href="uas.html">Home</a>
+                      </li>
+                      <li class="nav-item mr-4">
+                        <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                      </li>
+                    <li class="nav-item dropdown active mr-4 ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Guitar</a>
+                            <a class="dropdown-item" href="#">Piano</a>
+                            <a class="dropdown-item" href="#">Drum</a>
+                            <a class="dropdown-item" href="#">Bass</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown active mr-4 ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-expanded="false">
+                          Elements
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#discount">Get Discount</a>
+                          <a class="dropdown-item" href="#blog">Blogs</a>
+                          <a class="dropdown-item" href="#">Contact</a>
+                          <a class="dropdown-item" href="#">Accessibility</a>
+                          <a class="dropdown-item" href="#">About Us</a>
+                        </div>
+                      </li>
+                    <div class="mt-2">
+                        <a href="#"><i class="bi bi-bag" style="color: white;"></i></a>
+                        <h6 class="ml-2" style="color:white; float: right; margin-top:4px">BUY</h6>
+                    </div>
+                </ul>
+                <div class="">
+                    <a href="#"><i class="bi bi-search mr-2" style="color: white;"></i></a>
+                    <a href="#"><i class="bi bi-heart mr-2" style="color: white;"></i></a>
+                    <a href="#"><i class="bi bi-bag-plus" style="color: white;"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse ml-auto " id="navbarSupportedContent"></div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown active mr-4">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Featured
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Best Selling</a>
+                        <a class="dropdown-item" href="#">Newest</a>
+                        <a class="dropdown-item" href="#">Best Rated</a>
+                        <a class="dropdown-item" href="#">Trending</a>
+                        <a class="dropdown-item" href="#">Price</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container mb-4 mt-4">
+        <section id="portfolio" class="portfolio pb-4"
+            style="border:solid black 2px; background-color: grey;">
+            <div class="row mb-4 mt-4" data-aos="zoom-in-up">
+                <div class="col-md ml-4">
+                    <div class="card" style="border:solid green">
+                        <img height="400px" width="200px" class="card-img-top" src="img/gitar5.png">
+                        <div class="card-body">
+                            <h5>Guitar Acoustic</h5>
+                            <h5><b><i>Rp.500.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="border:solid green">
+                        <img height="400px" width="200px" class="card-img-top" src="img/gitar6.png">
+                        <div class="card-body">
+                            <h5>Guitar Acoustic</h5>
+                            <h5><b><i>Rp.400.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="border:solid green">
+                        <img height="400px" width="200px" class="card-img-top" src="img/gitar13.png">
+                        <div class="card-body">
+                            <h5>Guitar Acoustic</h5>
+                            <h5><b><i>Rp.600.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md mr-4">
+                    <div class="card" style="border:solid green">
+                        <img height="400px" width="200px" class="card-img-top" src="img/gitar7.png">
+                        <div class="card-body">
+                            <h5>Guitar Acoustic</h5>
+                            <h5><b><i>Rp.700.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4 " data-aos="zoom-in-up">
+                <div class="col-md ml-4">
+                    <div class="card" style="border:solid green">
+                        <img height="400px" width="200px" class="card-img-top" src="img/gitar2.png">
+                        <div class="card-body">
+                            <h5>Guitar Electric</h5>
+                            <h5><b><i>Rp.1.500.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="border:solid green;">
+                        <img height="400px" width="10px" class="card-img-top" src="img/gitar3.png">
+                        <div class="card-body">
+                            <h5>Guitar Electric</h5>
+                            <h5><b><i>Rp.1.200.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="border:solid green">
+                        <img height="400px" width="200px" class="card-img-top" src="img/gitar20.png">
+                        <div class="card-body">
+                            <h5>Guitar Electric</h5>
+                            <h5><b><i>Rp.1.450.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md mr-4">
+                    <div class="card" style="border:solid green">
+                        <img height="400px" width="200px" class="card-img-top" src="img/gitar21.png">
+                        <div class="card-body">
+                            <h5>Guitar Electric</h5>
+                            <h5><b><i>Rp.1.300.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4 " data-aos="zoom-in-up">
+                <div class="col-md ml-4">
+                    <div class="card" style="border:solid green">
+                        <img height="300px" width="200px" class="card-img-top" src="img/piano2.png">
+                        <div class="card-body">
+                            <h5>Piano</h5>
+                            <h5><b><i>Rp.14.400.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="border:solid green;">
+                        <img height="300px" width="10px" class="card-img-top" src="img/piano4.png">
+                        <div class="card-body">
+                            <h5>Piano</h5>
+                            <h5><b><i>Rp.15.500.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="border:solid green">
+                        <img height="300px" width="200px" class="card-img-top" src="img/piano5.png">
+                        <div class="card-body">
+                            <h5>Piano</h5>
+                            <h5><b><i>Rp.13.000.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md mr-4">
+                    <div class="card" style="border:solid green">
+                        <img height="300px" width="200px" class="card-img-top" src="img/piano6.png">
+                        <div class="card-body">
+                            <h5>Piano</h5>
+                            <h5><b><i>Rp.14.000.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4 " data-aos="zoom-in-up">
+                <div class="col-md ml-4">
+                    <div class="card" style="border:solid green">
+                        <img height="300px" width="200px" class="card-img-top" src="img/drum3.png">
+                        <div class="card-body">
+                            <h5>Drum</h5>
+                            <h5><b><i>Rp.15.590.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="border:solid green;">
+                        <img height="300px" width="10px" class="card-img-top" src="img/drum6.png">
+                        <div class="card-body">
+                            <h5>Drum</h5>
+                            <h5><b><i>Rp.17.011.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="border:solid green">
+                        <img height="300px" width="200px" class="card-img-top" src="img/drum8.png">
+                        <div class="card-body">
+                            <h5>Drum</h5>
+                            <h5><b><i>Rp.15.500.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md mr-4">
+                    <div class="card" style="border:solid green">
+                        <img height="300px" width="200px" class="card-img-top" src="img/drum5.png">
+                        <div class="card-body">
+                            <h5>Drum</h5>
+                            <h5><b><i>Rp.17.250.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4 " data-aos="zoom-in-up">
+                <div class="col-md ml-4">
+                    <div class="card" style="border:solid green">
+                        <img height="250px" width="200px" class="card-img-top" src="img/gitar12.png">
+                        <div class="card-body">
+                            <h5>Guitar Bass</h5>
+                            <h5><b><i>Rp.2.000.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md mr-4">
+                    <div class="card" style="border:solid green;">
+                        <img height="250px" width="10px" class="card-img-top" src="img/gitar15.png">
+                        <div class="card-body">
+                            <h5>Guitar Bass</h5>
+                            <h5><b><i>Rp.2.400.000,-</i></b></h5>
+                            <button class="btn btn-success" style="border:solid black" type="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+                        <h3>Ruangmusik.</h3>
+                        <span>Padangsidimpuan, Dwikora Street, North Sumatera, Indonesia</span>
+                        <br>
+                        <span>(+62)812-6239-0852</span>
+                        <br>
+                        <span>jonathanclase4@gmail.com</span>
+                        <br>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
+                        <h2>Usefull Links</h2>
+                        <ul>
+                            <li><a href="#">Delivery Information</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Search Terms</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+                        <h2>Get in touch</h2>
+                        <span>Whatsapp &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; +62822 6794 1119</span>
+                        <br>
+                        <spanp>Real Live Support &nbsp;North Sumatera, Indonesia</span>
+                            <br>
+                            <span>Monday-Friday &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 08:00-20:00</span>
+                            <br>
+                            <span>Saturday &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                                09:00-21:00</span>
+                            <br>
+                            <span>Sunday &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp;&nbsp; 13:00-22:00</span>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
+                        <h2>Newsletter signup</h2>
+                        <p>
+                            Subscribe to our newsletter now and
+                            <br>
+                            stay up-to-date with new collections.
+                        </p>
+                        <form action="">
+                            <input type="email">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.css" rel="stylesheet" />
+  <link href="uas.css" rel='stylesheet'>
+
+  <title>UAS</title>
+
+  <style>
+
+  </style>
+</head>
+
+<body style="background-color: rgba(12, 103, 68, 0.8);">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
+    <div class="container">
+      <div class="collapse text-right navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-expanded="false">
+              English
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Bahasa Indonesia</a>
+              <a class="dropdown-item" href="#">UK</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-expanded="false">
+              USD
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">IND</a>
+              <a class="dropdown-item" href="#">UK</a>
+              <a class="dropdown-item" href="#">EUR</a>
+              <a class="dropdown-item" href="#">GBP</a>
+              <a class="dropdown-item" href="#">SEK</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown active mr-4 ">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi bi-person-circle mr-2" style="color: white;"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="login.html">Login</a>
+              <a class="dropdown-item" href="#">Sign Up</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark pt-3">
+    <div class="container">
+      <a class="navbar-brand mr-5" href="#" style="color:lightseagreen; font-size: 25px;"><b>Ruangmusik.</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item mr-4">
+            <a class="nav-link active" aria-current="page" href="uas.html">Home</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item dropdown active mr-4 ">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#portfolio">Guitar</a>
+              <a class="dropdown-item" href="#">Piano</a>
+              <a class="dropdown-item" href="#">Drum</a>
+              <a class="dropdown-item" href="#">Bass</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown active mr-4 ">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-expanded="false">
+              Elements
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#discount">Get Discount</a>
+              <a class="dropdown-item" href="#blog">Blogs</a>
+              <a class="dropdown-item" href="#">Contact</a>
+              <a class="dropdown-item" href="#">Accessibility</a>
+              <a class="dropdown-item" href="#">About Us</a>
+            </div>
+          </li>
+          <div class="mt-2">
+            <a href="#"><i class="bi bi-bag" style="color: white;"></i></a>
+            <h6 class="ml-2" style="color:white; float: right; margin-top:4px">BUY</h6>
+          </div>
+        </ul>
+        <div class="icon">
+          <a href="#"><i class="bi bi-search mr-2" style="color: white;"></i></a>
+          <a href="#"><i class="bi bi-heart mr-2" style="color: white;"></i></a>
+          <a href="#"><i class="bi bi-bag-plus" style="color: white;"></i></a>
+        </div> 
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron md-4"
+    style="background-image: url(img/blog/header2.png); background-size: cover; background-position: center; height: 700px; border:solid black; position: relative;">
+    <div class="container">
+      <div class="container text-center">
+        <p class="lead"
+          style="color: black; margin-top: 350px; font-family:Arial, Helvetica, sans-serif; font-size: 25px;"><b>Musical
+            Instrument Collections</b></p>
+        <h1 class="display-5"
+          style="color: black; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">New Musical
+          Instrument <br> from RuangMusik.</h1>
+        <a class="btn btn-success btn-lg" style="position:relative; border:solid black" href="shop.html"
+          role="button">SHOP NOW</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card" style="height: 508px; background-color: white; border: solid black 3px;">
+          <div class="card-body justify-content-center">
+            <img style="height: 450px; width:150px;" src="img/gitar3.png" alt="">
+            <h1 style="position: relative; top: -70%; left: 30%;">The Guitar Elektrik</h1>
+            <h2 style="opacity: 0.5; color: gray; position: relative; top: -70%; left: 30%">Sale off 50%</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="height: 250px; border: solid black 3px;">
+          <div class="card-body">
+            <img style="height: 200px; width: 200px;" src="img/piano.png" alt="">
+            <h1 style="position: relative; top: -150px; left: 50%;">The Piano</h1>
+            <h2 style="opacity: 0.5; color: gray; position: relative; top: -150px; left: 50%">Sale off 50%</h2>
+          </div>
+        </div>
+        <div class="card mt-2" style="height: 250px; border: solid black 3px;">
+          <div class="card-body">
+            <img style="height: 200px; width: 250px;" src="img/drum.png" alt="">
+            <h1 style="position: relative; top: -150px; left: 50%;">The Drum</h1>
+            <h2 style="opacity: 0.5; color: gray; position: relative; top: -150px; left: 50%">Sale off 50%</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <section id="portfolio" class="portfolio"
+      style="border-radius: 10px; border: solid black 3px; background-color: white;">
+      <div class="row pt-2 pb-2">
+        <div class="col text-center">
+          <h2
+            style="font-size: 25px; color: black; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 30px;">
+            Our Products</h2>
+          <hr style="height: 5px; background-color: black;">
+        </div>
+      </div>
+
+      <ul class="nav nav-tabs justify-content-center">
+        <li class="btn btn-success mr-4" style="border: solid black;"><a data-toggle="tab" href="#home"
+            style="text-decoration: none; color: black;">Guitar</a></li>
+        <li class=" btn btn-success mr-4" style="border: solid black;"><a data-toggle="tab" href="#menu1"
+            style="text-decoration: none; color: black;">Drum</a></li>
+        <li class=" btn btn-success" style="border: solid black;"><a data-toggle="tab" href="#menu2"
+            style="text-decoration: none; color: black;">Piano</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="home" class="tab-pane active">
+          <div class="row mt-4">
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img class="card-img-top" src="img/gitar4.png" alt="">
+              <div class="card card-body">
+                <span>Guitar Acoustic</span>
+                <span><b><i>Rp.500.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img class="card-img-top" src="img/gitar14.png" alt="">
+              <div class="card card-body">
+                <span>Guitar Acoustic</span>
+                <span><b><i>Rp.700.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img class="card-img-top" src="img/gitar8.png" alt="">
+              <div class="card card-body">
+                <span>Guitar Acoustic</span>
+                <span><b><i>Rp.600.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img class="card-img-top" src="img/gitar11.png" alt="">
+              <div class="card card-body">
+                <span>Guitar Acoustic</span>
+                <span><b><i>Rp.550.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3 mb-3">
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img class="card-img-top" src="img/gitar16.png" alt="">
+              <div class="card card-body">
+                <span>Guitar Electric</span>
+                <span><b><i>Rp.1.500.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img class="card-img-top" src="img/gitar19.png" alt="">
+              <div class="card card-body">
+                <span>Guitar Electric</span>
+                <span><b><i>Rp.1.800.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img height="150px" class="card-img-top" src="img/gitar12.png" alt="">
+              <div class="card card-body">
+                <span>Guitar Bass</span>
+                <span><b><i>Rp.2.000.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img class="card-img-top" src="img/gitar15.png" alt="">
+              <div class="card card-body">
+                <span>Guitar Electric</span>
+                <span><b><i>Rp.2.400.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="menu1" class="tab-pane">
+          <div class="row mt-4">
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img height="250px" class="card-img-top" src="img/drum.png" alt="">
+              <div class="card card-body">
+                <span>Drum Set Black</span>
+                <span><b><i>Rp.15.590.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img height="250px" class="card-img-top" src="img/drum2.png" alt="">
+              <div class="card card-body">
+                <span>Drum Set Black</span>
+                <span><b><i>Rp.15.590.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img height="250px" class="card-img-top" src="img/drum3.png" alt="">
+              <div class="card card-body">
+                <span>Drum Set Green</span>
+                <span><b><i>Rp.15.000.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img height="250px" class="card-img-top" src="img/drum4.png" alt="">
+              <div class="card card-body">
+                <span>Drum Set Red</span>
+                <span><b><i>Rp.16.000.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3 mb-3">
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img height="250px" class="card-img-top" src="img/drum5.png" alt="">
+              <div class="card card-body">
+                <span>Drum Set Black</span>
+                <span><b><i>Rp.15.550.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img height="250px" class="card-img-top" src="img/drum6.png" alt="">
+              <div class="card card-body">
+                <span>Drum Set Maroon</span>
+                <span><b><i>Rp.17.580.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img height="250px" class="card-img-top" src="img/drum7.png" alt="">
+              <div class="card card-body">
+                <span>Drum Set Red</span>
+                <span><b><i>Rp.16.750.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img height="250px" class="card-img-top" src="img/drum8.png" alt="">
+              <div class="card card-body">
+                <span>Drum Set Blue</span>
+                <span><b><i>Rp.18.000.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="menu2" class="tab-pane">
+          <div class="row mt-4">
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img height="300px" class="card-img-top" src="img/piano.png" alt="">
+              <div class="card card-body">
+                <span>Piano</span>
+                <span><b><i>Rp.14.000.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img height="300px" class="card-img-top" src="img/piano1.png" alt="">
+              <div class="card card-body">
+                <span>Piano</span>
+                <span><b><i>Rp.14.400.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img height="300px" class="card-img-top" src="img/piano2.png" alt="">
+              <div class="card card-body">
+                <span>Piano</span>
+                <span><b><i>Rp.15.000.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img height="300px" class="card-img-top" src="img/piano3.png" alt="">
+              <div class="card card-body">
+                <span>Piano</span>
+                <span><b><i>Rp.13.950.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3 mb-3">
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img height="300px" class="card-img-top" src="img/piano4.png" alt="">
+              <div class="card card-body">
+                <span>Piano</span>
+                <span><b><i>Rp.14.600.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img height="300px" class="card-img-top" src="img/piano5.png" alt="">
+              <div class="card card-body">
+                <span>Piano</span>
+                <span><b><i>Rp.16.000.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" style="border:solid grey;">
+              <img height="300px" class="card-img-top" src="img/piano6.png" alt="">
+              <div class="card card-body">
+                <span>Piano</span>
+                <span><b><i>Rp.15.8000.000,-</i></b></span>
+                <button class="btn btn-dark mt-3">BUY</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+
+
+
+
+  <div class="container mt-4 mb-4">
+    <section id="discount" class="portfolio pb-1"
+      style="border-radius: 10px; border:solid black 3px; background-color: white;">
+      <div class="row mb-3 pt-3">
+        <div class="col text-center">
+          <h2
+            style="color: black; font-size: 25px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 30px;">
+            Get Discount</h2>
+          <hr style="height:5px">
+        </div>
+      </div>
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active mt-5 mb-5 pt-4">
+            <img width="1000" height="575" src="img/gitar4.png" class="d-block w-50 h-50 mx-auto" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="mb-3"
+                style="position: relative; top: 100px; color: black; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">
+                <b>Guitar Acoustic</b><br> <span
+                  style="text-decoration: line-through; opacity: 0.5;">Rp.700.000,-</span> Rp.400.000,- </h5>
+            </div>
+          </div>
+          <div class="carousel-item pt-5 pb-5">
+            <img src="img/piano.png" class="d-block w-10 h-20 mx-auto" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5
+                style="position: relative; top: 50px; color: black; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">
+                <b>Piano</b><br><span style="text-decoration: line-through; opacity: 0.5;">Rp.13.000.000,-</span>
+                Rp.12.000.000,-</h5>
+            </div>
+          </div>
+          <div class="carousel-item pb-5">
+            <img src="img/drum2.png" class="d-block w-50 h-50 mx-auto" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5
+                style="position: relative; top: 50px; color: black; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">
+                <b>Drum</b><br><span style="text-decoration: line-through; opacity: 0.5;">Rp.14.000.000,-</span>
+                Rp.13.000.000,-</h5>
+            </div>
+          </div>
+          <div class="carousel-item pt-5 pb-5">
+            <img width="700px" src="img/gitar19.png" class="d-block w-10 h-20 mx-auto" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5
+                style="position: relative; top: 50px; color: black; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">
+                <b>Guitar Electric</b><br><span
+                  style="text-decoration: line-through; opacity: 0.5;">Rp.1.500.000,-</span> Rp.1.200.000,-</h5>
+            </div>
+          </div>
+          <div class="carousel-item pt-5 pb-5">
+            <img width="700px" src="img/gitar12.png" class="d-block w-10 h-20 mx-auto" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5
+                style="position: relative; top: 50px; color: black; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">
+                <b>Bass</b><br><span style="text-decoration: line-through; opacity: 0.5;">Rp.2.400.000,-</span>
+                Rp.2.000.000,-</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev"
+          style="color: black;">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next"
+          style="color: black;">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <div class="container mb-4">
+    <section id="blog" class="portfolio pb-4"
+      style="border-radius: 10px; border:solid black 3px; background-color: grey;">
+      <div class="row mb-3 pt-3">
+        <div class="col text-center">
+          <h2
+            style="color: black; font-size: 25px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 30px;">
+            Latest Blog</h2>
+          <hr style="height: 5px; color: white;">
+        </div>
+      </div>
+      <div class="row mb-4 ">
+        <div class="col-md">
+          <div class="card ml-4" style="border:solid white">
+            <img height="200px" class="card-img-top" src="img/blog/b.jpg">
+            <div class="card-body">
+              <h5 style="opacity: 0.5;">Gitaris</h5>
+              <h4><b>Playing guitar at dusk</b></h4>
+              <button class="btn btn-success" style="border:solid black" type="button">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card" style="border:solid white">
+            <img height="200px" class="card-img-top" src="img/blog/c.jpg">
+            <div class="card-body">
+              <h5 style="opacity: 0.5;">Drummer</h5>
+              <h4><b>Playing drum with emotional</b></h4>
+              <button class="btn btn-success" style="border:solid black" type="button">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card" style="border:solid white">
+            <img height="200px" class="card-img-top" src="img/blog/unnamed.jpg">
+            <div class="card-body">
+              <h5 style="opacity: 0.5;">Gitaris</h5>
+              <h4><b>Lets to learn how playing guitar</b></h4>
+              <button class="btn btn-success" style="border:solid black" type="button">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card mr-4" style="border:solid white">
+            <img height="170px" class="card-img-top" src="img/blog/drummer.jpg">
+            <div class="card-body">
+              <h5 style="opacity: 0.5;">Drummer</h5>
+              <h4><b>Drummer performance at concert </b></h4>
+              <button class="btn btn-success" style="border:solid black" type="button">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+            <h3>Ruangmusik.</h3>
+            <span>Padangsidimpuan, Dwikora Street, North Sumatera, Indonesia</span>
+            <br>
+            <span>(+62)812-6239-0852</span>
+            <br>
+            <span>jonathanclase4@gmail.com</span>
+            <br>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
+            <h2>Usefull Links</h2>
+            <ul>
+              <li><a href="#">Delivery Information</a></li>
+              <li><a href="#">Terms & Condition</a></li>
+              <li><a href="#">Customer Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Search Terms</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+            <h2>Get in touch</h2>
+            <span>Whatsapp &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; +62822 6794 1119</span>
+            <br>
+            <spanp>Real Live Support &nbsp;North Sumatera, Indonesia</span>
+              <br>
+              <span>Monday-Friday &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 08:00-20:00</span>
+              <br>
+              <span>Saturday &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                09:00-21:00</span>
+              <br>
+              <span>Sunday &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                13:00-22:00</span>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
+            <h2>Newsletter signup</h2>
+            <p>
+              Subscribe to our newsletter now and
+              <br>
+              stay up-to-date with new collections.
+            </p>
+            <form action="">
+              <input type="email">
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-buttom-text">
+      <a href="#navbarSupportedContent">
+        <img src="img/up2.png" class="up mr-2 mb-2">
+      </a>
+      <p>Copyright 2021 Ruangmusik - All Right reserved! </p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.js"></script>
+</body>
+
+</html>
